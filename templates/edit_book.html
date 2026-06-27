@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Edit Book</h2>
+
+<form method="POST">
+
+    <input class="form-control mb-2"
+           name="title"
+           value="{{ book.title }}" required>
+
+    <input class="form-control mb-2"
+           name="author"
+           value="{{ book.author }}" required>
+
+    <input class="form-control mb-2"
+           name="category"
+           value="{{ book.category }}" required>
+
+    <input class="form-control mb-2"
+           name="isbn"
+           value="{{ book.isbn }}" required>
+
+    <input class="form-control mb-2"
+           name="price"
+           value="{{ book.price }}" required>
+
+    <input class="form-control mb-2"
+           name="quantity"
+           value="{{ book.quantity }}" required>
+
+    <input class="form-control mb-2"
+           name="published_year"
+           value="{{ book.published_year }}" required>
+
+    <button class="btn btn-primary">
+        Update Book
+    </button>
+
+</form>
+
+{% endblock %}

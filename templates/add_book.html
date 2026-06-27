@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Add Book</h2>
+
+<form method="POST">
+
+    <input class="form-control mb-2"
+           name="title"
+           placeholder="Title" required>
+
+    <input class="form-control mb-2"
+           name="author"
+           placeholder="Author" required>
+
+    <input class="form-control mb-2"
+           name="category"
+           placeholder="Category" required>
+
+    <input class="form-control mb-2"
+           name="isbn"
+           placeholder="ISBN" required>
+
+    <input class="form-control mb-2"
+           name="price"
+           placeholder="Price" required>
+
+    <input class="form-control mb-2"
+           name="quantity"
+           placeholder="Quantity" required>
+
+    <input class="form-control mb-2"
+           name="published_year"
+           placeholder="Published Year" required>
+
+    <button class="btn btn-success">
+        Add Book
+    </button>
+
+</form>
+
+{% endblock %}

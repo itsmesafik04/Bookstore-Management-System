@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="text-center mt-5">
+
+    <h1 class="display-1">500</h1>
+
+    <h3>Internal Server Error</h3>
+
+    <p>
+        Something went wrong on our side.
+        Please try again later.
+    </p>
+
+    <a href="{{ url_for('books_page') }}"
+       class="btn btn-primary">
+        Back to Home
+    </a>
+
+</div>
+
+{% endblock %}
